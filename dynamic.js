@@ -1,6 +1,8 @@
 function setup() {
   createCanvas(380, 570);
   textFont('monospace');
+  // 打开页面就先生成一批粒子，避免画面空白；点击鼠标可重新生成
+  initParticles();
 }
 
 let particles = [];
