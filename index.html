@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ip-01-p5-works | 何纯清的 p5.js 作品</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh; background: #0f1220; color: #e8eaf2;
+      font-family: "Microsoft YaHei", sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;
+    }
+    h1 { font-size: 34px; margin-bottom: 8px; letter-spacing: 2px; }
+    .sub { color: #8a93a6; margin-bottom: 50px; font-size: 15px; }
+    .cards { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; }
+    a.card {
+      display: block; width: 280px; padding: 34px 28px; border-radius: 14px;
+      text-decoration: none; color: #e8eaf2; transition: transform .2s, box-shadow .2s;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    a.card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.45); }
+    .card.static { background: linear-gradient(160deg, #1a2a6c, #b21f1f 70%, #fdbb2d); }
+    .card.dynamic { background: linear-gradient(160deg, #1e2749, #2a1e49 60%, #5b2a86); }
+    .card h2 { font-size: 22px; margin-bottom: 10px; }
+    .card p { font-size: 14px; line-height: 1.7; opacity: .85; }
+    .card .tag { display: inline-block; margin-top: 18px; font-size: 12px; padding: 4px 12px; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; }
+  </style>
+</head>
+<body>
+  <h1>互动编程 · 作业一</h1>
+  <div class="sub">p5.js 静态与动态作品 —— 何纯清</div>
+  <div class="cards">
+    <a class="card static" href="static.html">
+      <h2>热爱不息</h2>
+      <p>纯代码绘制的静态几何海报：三色渐变背景 + 文字排版，800×1200 竖版，使用 lerpColor 逐行插值实现渐变。</p>
+      <span class="tag">静态作品</span>
+    </a>
+    <a class="card dynamic" href="dynamic.html">
+      <h2>粒子流向</h2>
+      <p>80 个 HSB 色相粒子的动态海报：鼠标在左/右半屏移动，粒子流整体改变方向；点击鼠标重新生成粒子场。包含两种以上交互。</p>
+      <span class="tag">动态作品 · 可交互</span>
+    </a>
+  </div>
+</body>
+</html>
