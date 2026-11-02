@@ -38,8 +38,6 @@ function setup() {
   stroke(255,100);
   line(60, lineY, width-60, lineY);
   noStroke();
-  text("时间：2026.11.02", 60, height - 90);
-  text("地点：线上", 60, height - 60);
 
   textAlign(RIGHT, BOTTOM);
   text("主题：简约静态海报", width-60, height - 90);
