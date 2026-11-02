@@ -24,7 +24,7 @@ function setup() {
 
   textSize(26);
   textStyle(NORMAL);
-  text("STATIC POSTER DEMO", 60, 170);
+  text("热爱不息 系列 · 01 静 / STILL", 60, 170);
 
   // 中间文字
   textAlign(CENTER, CENTER);
